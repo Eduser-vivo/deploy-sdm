@@ -2,7 +2,7 @@
   "name": "saveur_monde_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Eduser-vivo.github.io/perso_sdm",
+  "homepage": "http://Eduser-vivo.github.io/deploy-sdm",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
