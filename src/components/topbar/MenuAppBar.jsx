@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     position : "absolute",
     top : 0,
-    width:'100%',  
+    width: '100%',
+    zIndex: theme.zIndex.drawer + 1,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -65,8 +66,10 @@ export const MenuAppBar=()=> {
     setAnchorEl(null);
   };
 
+
+
   return (
-    <div className={classes.root}>
+    <div className={classes.root} >
      
       <AppBar position="static">
         <Toolbar>
@@ -74,7 +77,7 @@ export const MenuAppBar=()=> {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            Saveur Du Monde
+            Saveur Du Monde 
           </Typography>
           <FormGroup>
             <FormControlLabel
