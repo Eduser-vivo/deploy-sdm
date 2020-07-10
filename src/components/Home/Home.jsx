@@ -30,7 +30,6 @@ export default function NestedGrid() {
   function FormRow({item1, item2, item3, root1, root2, root3}) {
     return (
       <React.Fragment>
-         <MenuAppBar />
         <Grid container className={classes.root} spacing={2} style={{ marginLeft:"50px", marginBottom:"30px"}} >
           <Grid item xs={12}>
               <Grid container justify="center" spacing={2} >
@@ -73,18 +72,21 @@ export default function NestedGrid() {
   }
 
   return (
-    <div className={classes.root} id="homeContainerId">
-      <Grid container spacing={1}>
-        <Grid container item xs={12} spacing={5}>
-          <FormRow item1="GESTION" root1="gestion" item2="CAISSE" root2="caisse" item3="COMMANDE" root3="commande" />
+    <>
+      <MenuAppBar />
+      <div className={classes.root} id="homeContainerId">
+        <Grid container spacing={1}>
+          <Grid container item xs={12} spacing={5}>
+            <FormRow item1="GESTION" root1="gestion" item2="CAISSE" root2="caisse" item3="COMMANDE" root3="commande" />
+          </Grid>
+          <Grid container item xs={12} spacing={5}>
+            <FormRow item1=" PERSONNALISER " item2="GENERER DES RAPPORTS" item3="STATISTIQUES"/>
+          </Grid>
+          <Grid container item xs={12} spacing={5}>
+            <FormRow item1="JOURNAL DES ACTIVITES" item2="AJOUTER UN PRODUIT" item3="CREER UNE FORMULE" />
+          </Grid>
         </Grid>
-        <Grid container item xs={12} spacing={5}>
-          <FormRow item1=" PERSONNALISER " item2="GENERER DES RAPPORTS" item3="STATISTIQUES"/>
-        </Grid>
-        <Grid container item xs={12} spacing={5}>
-          <FormRow item1="JOURNAL DES ACTIVITES" item2="AJOUTER UN PRODUIT" item3="CREER UNE FORMULE" />
-        </Grid>
-      </Grid>
-    </div>
+      </div>
+    </>
   );
 }

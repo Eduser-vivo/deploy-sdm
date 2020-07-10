@@ -12,7 +12,10 @@ function App() {
 
           <Route exact path="/">
               <Home />
-              {/* <Caisse /> */}
+          </Route>
+
+          <Route exact path="/deploy-sdm">
+              <Home />
           </Route>
 
           <Route path="/login">
