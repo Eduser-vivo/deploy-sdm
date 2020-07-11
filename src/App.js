@@ -3,6 +3,7 @@ import SignIn from './components/Authentication/SignIn';
 import Home from './components/Home/Home';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import Dashbord from './components/Dashbord/Dashbord';
+// import { CategorieProduct } from './components/Dashbord/CaisseComponent/CategorieProduct';
 
 function App() {
   return (

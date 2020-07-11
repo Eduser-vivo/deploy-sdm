@@ -3,6 +3,7 @@ import {caisseStyle} from '../../makeStyles/CaisseStyle'
 import { Calculater } from '../CaisseComponent/Calculater';
 import CaisseSearchBar from '../CaisseComponent/SearchBar';
 import { CaisseScreen } from '../CaisseComponent/CaisseScreen';
+import { CategorieProduct } from '../CaisseComponent/CategorieProduct';
 
 export const Caisse = () => {
     const pClasses = caisseStyle();
@@ -16,6 +17,9 @@ export const Caisse = () => {
             <div className={pClasses.leftDiv}>
                 <div className={pClasses.topLeft}>
                     <CaisseSearchBar />
+                </div>
+                <div className="container">
+                    <CategorieProduct />
                 </div>
 
                 <div className={pClasses.downLeft}>

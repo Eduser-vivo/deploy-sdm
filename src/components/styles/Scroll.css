@@ -1,0 +1,22 @@
+.menu-item {
+    padding: 0;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+  }
+  .menu-item-wrapper.active {
+    background-color: gray;
+  }
+  .menu-item.active {
+    background-color: gray;
+  }
+   
+  .scroll-menu-arrow {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .ScrollMenu{
+      background-color: gray;
+      padding: 5;
+  }
